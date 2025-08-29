@@ -41,8 +41,8 @@ export default function Header() {
             <Link to="/login" className={cx("login")}>
               Đăng nhập
             </Link>
-            <Link to="/dashboard" className={cx("signup")}>
-              Đăng ký
+            <Link to="/partner" className={cx("signup")}>
+              Dành cho thương hiệu
             </Link>
           </div>
         </div>
