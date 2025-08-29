@@ -1,0 +1,21 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: rgba(255,255,255,.85);
+  backdrop-filter: saturate(160%) blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+.wrap { height: 64px; display:flex; align-items:center; justify-content:space-between; }
+.left { display:none; gap:24px; align-items:center; font-size:15px; }
+.link { opacity:1; transition:opacity .15s; }
+.link:hover { opacity:.7; }
+.brand { position:absolute; left:50%; transform:translateX(-50%); display:flex; gap:8px; align-items:center; }
+.brandTitle { font-weight:600; font-size:20px; }
+.controls { display:flex; gap:12px; align-items:center; }
+.search { display:none; align-items:center; gap:8px; border:1px solid var(--border); border-radius:999px; height:40px; padding:0 12px; }
+.search input { outline:none; border:none; width:220px; font-size:15px; background:transparent; color:var(--text); }
+.login { font-size:15px; }
+.signup { background: var(--brand-yellow); border-radius:999px; height:40px; padding:0 20px; font-weight:600; display:grid; place-items:center; }
+@media (min-width: 768px) { .left { display:flex; } }
+@media (min-width: 1024px) { .search { display:flex; } }

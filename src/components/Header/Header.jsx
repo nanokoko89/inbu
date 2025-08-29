@@ -1,0 +1,41 @@
+import React from 'react';
+import classNames from 'classnames/bind';
+import styles from './Header.module.scss';
+import { Heart, Search, ChevronDown, Coffee } from '../Icons';
+
+const cx = classNames.bind(styles);
+
+export default function Header() {
+  return (
+    <header className={cx('header')}>
+      <div className="container">
+        <div className={cx('wrap')}>
+          <nav className={cx('left')}>
+            <a href="#" className={cx('link')}>FAQ</a>
+            <a href="#" className={cx('link')}>
+              Wall of&nbsp;<Heart style={{width:16,height:16}}/>
+            </a>
+            <a href="#" className={cx('link')}>
+              Resources&nbsp;<ChevronDown style={{width:16,height:16}}/>
+            </a>
+          </nav>
+
+          <div className={cx('brand')}>
+            <Coffee style={{width:24,height:24, color:'var(--brand-yellow)'}}/>
+            <div className={cx('brandTitle')}>Buy me a coffee</div>
+            <sup>®</sup>
+          </div>
+
+          <div className={cx('controls')}>
+            <div className={cx('search')}>
+              <Search style={{width:16,height:16, color:'rgba(0,0,0,.6)'}}/>
+              <input placeholder="Search creators" />
+            </div>
+            <a href="#" className={cx('login')}>Log in</a>
+            <a href="#" className={cx('signup')}>Sign up</a>
+          </div>
+        </div>
+      </div>
+    </header>
+  )
+}
