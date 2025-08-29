@@ -13,7 +13,7 @@ export default function Header() {
         <div className={cx("wrap")}>
           <nav className={cx("left")}>
             <Link to="/" className={cx("link")}>
-              Home
+              Trang chủ
             </Link>
             <Link to="/explore" className={cx("link")}>
               Khám phá

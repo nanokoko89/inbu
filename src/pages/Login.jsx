@@ -77,14 +77,14 @@ export default function Login() {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
   const [error, setError] = React.useState(
-    "There is no account with the given email address"
+    "Không có tài khoản với địa chỉ email này"
   ); // hiển thị sẵn để giống ảnh
 
   function onSubmit(e) {
     e.preventDefault();
     // Giữ nguyên hành vi để mô phỏng UI; bạn có thể thay bằng API thật.
-    if (!email) setError("There is no account with the given email address");
-    else setError("There is no account with the given email address");
+    if (!email) setError("Không có tài khoản với địa chỉ email này");
+    else setError("Không có tài khoản với địa chỉ email này");
   }
 
   return (
@@ -94,24 +94,24 @@ export default function Login() {
           <CupIcon />
         </div>
         <div className={cx("authLink")}>
-          <span>Don't have an account?</span>
+          <span>Chưa có tài khoản?</span>
           <a href="#" className={cx("signup")}>
-            Sign up
+            Đăng ký
           </a>
         </div>
       </header>
 
       <main className={cx("main")}>
-        <h1 className={cx("title")}>Welcome back</h1>
+        <h1 className={cx("title")}>Chào mừng trở lại</h1>
 
         <form className={cx("form")} onSubmit={onSubmit} noValidate>
-          <label className={cx("label")}>Email address</label>
+          <label className={cx("label")}>Địa chỉ email</label>
           <input
             type="email"
             className={cx("input", { error: !!error })}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="you@example.com"
+              placeholder="ban@vidu.com"
           />
           {error && (
             <div className={cx("error")} role="alert">
@@ -119,8 +119,8 @@ export default function Login() {
             </div>
           )}
 
-          <label className={cx("label")} style={{ marginTop: 10 }}>
-            Password
+            <label className={cx("label")} style={{ marginTop: 10 }}>
+            Mật khẩu
           </label>
           <input
             type="password"
@@ -130,31 +130,31 @@ export default function Login() {
             placeholder="••••••••"
           />
 
-          <button type="submit" className={cx("primary")}>
-            Continue with email
-          </button>
+            <button type="submit" className={cx("primary")}>
+              Tiếp tục với email
+            </button>
         </form>
 
-        <div className={cx("divider")}>
-          <span>or login with</span>
-        </div>
+          <div className={cx("divider")}>
+            <span>hoặc đăng nhập bằng</span>
+          </div>
 
         <div className={cx("socials")}>
           <button className={cx("socialBtn")}>
             {<GoogleIcon />}
-            <span>Continue with Google</span>
+            <span>Tiếp tục với Google</span>
           </button>
           <button className={cx("socialBtn")}>
             {<FacebookIcon />}
-            <span>Continue with Facebook</span>
+            <span>Tiếp tục với Facebook</span>
           </button>
           <button className={cx("socialBtn")}>
             {<AppleIcon />}
-            <span>Continue with Apple</span>
+            <span>Tiếp tục với Apple</span>
           </button>
           <button className={cx("socialBtn")}>
             {<TwitterIcon />}
-            <span>Continue with Twitter</span>
+            <span>Tiếp tục với Twitter</span>
           </button>
         </div>
       </main>

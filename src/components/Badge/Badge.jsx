@@ -13,7 +13,7 @@ export default function Badge({ avatar, title, supporters, className, style }) {
         <div className={cx('title')}>{title}</div>
         <div className={cx('meta')}>
           <Heart className={cx('icon')} />
-          <span>{supporters} supporters</span>
+          <span>{supporters} người ủng hộ</span>
         </div>
       </div>
     </div>

@@ -8,33 +8,33 @@ const cx = classNames.bind(styles);
 const items = [
   {
     icon: <Handshake style={{width:32,height:32}}/>,
-    title: 'Not just a membership',
-    text: 'Creators who previously only used Patreon noticed a massive increase in earnings after accepting one-off payments.'
+    title: 'Không chỉ là đăng ký thành viên',
+    text: 'Những nhà sáng tạo trước đây chỉ dùng Patreon đã nhận thấy thu nhập tăng mạnh sau khi nhận các khoản thanh toán một lần.'
   },
   {
     icon: <Globe style={{width:32,height:32}}/>,
-    title: '6 new languages',
-    text: 'We now support Spanish, French, Italian, German and Ukrainian—making it easier for your global audience to support you.'
+    title: '6 ngôn ngữ mới',
+    text: 'Chúng tôi giờ hỗ trợ tiếng Tây Ban Nha, Pháp, Ý, Đức và Ukraina—giúp khán giả toàn cầu dễ dàng ủng hộ bạn.'
   },
   {
     icon: <Mail style={{width:32,height:32}}/>,
-    title: 'Email marketing',
-    text: 'Instead of paying separately for email marketing tools like Mailchimp, send marketing emails to your fans for free.'
+    title: 'Tiếp thị email',
+    text: 'Thay vì trả phí riêng cho các công cụ tiếp thị email như Mailchimp, hãy gửi email quảng bá cho người hâm mộ miễn phí.'
   },
   {
     icon: <Smile style={{width:32,height:32}}/>,
-    title: 'Being friendly converts',
-    text: 'ICYMI, we make it simple and fun for your supporters. While you cannot put a number on feelings, it helps with conversions.'
+    title: 'Thân thiện giúp chuyển đổi',
+    text: 'ICYMI, chúng tôi làm cho người ủng hộ cảm thấy đơn giản và thú vị. Dù không thể đo bằng con số, điều đó giúp tăng chuyển đổi.'
   },
   {
     icon: <Lock style={{width:32,height:32}}/>,
-    title: 'Your privacy comes first',
-    text: 'Receive fan support without disclosing your identity or bank account. We\'ll do the heavy-lifting.'
+    title: 'Quyền riêng tư của bạn là ưu tiên',
+    text: 'Nhận ủng hộ mà không cần tiết lộ danh tính hay tài khoản ngân hàng. Chúng tôi sẽ xử lý phần khó.'
   },
   {
     icon: <Clock style={{width:32,height:32}}/>,
-    title: 'Get started in minutes',
-    text: 'Create your page and start accepting support in just a few clicks. It\'s that easy.'
+    title: 'Bắt đầu trong vài phút',
+    text: 'Tạo trang của bạn và bắt đầu nhận ủng hộ chỉ với vài cú nhấp. Dễ đến vậy.'
   }
 ];
 
@@ -42,7 +42,7 @@ export default function Benefits() {
   return (
     <section className={cx('wrap')}>
       <div className={cx('container')}>
-        <h2 className={cx('title')}>Make 20% or more, compared to other platforms.</h2>
+        <h2 className={cx('title')}>Kiếm nhiều hơn 20% so với các nền tảng khác.</h2>
         <div className={cx('grid')}>
           {items.map((item,i) => (
             <div key={i} className={cx('item')}>

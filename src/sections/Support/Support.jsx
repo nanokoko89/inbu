@@ -1,34 +1,53 @@
-import React from 'react';
-import classNames from 'classnames/bind';
-import styles from './Support.module.scss';
-import { Coffee } from '../../components/Icons';
+import React from "react";
+import classNames from "classnames/bind";
+import styles from "./Support.module.scss";
+import { Coffee } from "../../components/Icons";
 
 const cx = classNames.bind(styles);
 
 export default function Support() {
   return (
-    <section className={cx('wrap')}>
-      <div className={cx('container','inner')}>
-        <div className={cx('text')}>
-          <p className={cx('eyebrow')}>SUPPORT</p>
-          <h2 className={cx('title')}>Give your audience an easy way to say thanks.</h2>
-          <p className={cx('desc')}>Buy Me a Coffee makes supporting fun and easy. In just a couple of taps, your fans can make the payment (buy you a coffee) and leave a message.</p>
+    <section className={cx("wrap")}>
+      <div className={cx("container", "inner")}>
+        <div className={cx("text")}>
+          <p className={cx("eyebrow")}>Thương hiệu</p>
+          <h2 className={cx("title")}>
+            Giúp thương hiệu và khách hàng hiểu nhau hơn.
+          </h2>
+          <p className={cx("desc")}>
+            Bao La giúp việc ủng hộ trở nên vui và dễ dàng. Chỉ vài chạm, người
+            hâm mộ có thể thanh toán (mua bạn một ly cà phê) và để lại lời nhắn.
+          </p>
         </div>
-        <div className={cx('graphic')}>
-          <div className={cx('card')}>
-            <div className={cx('cardHead')}>
-              <Coffee style={{width:40,height:40}}/>
-              <span>Buy Juliet a coffee</span>
+        <div className={cx("graphic")}>
+          <div className={cx("card")}>
+            <div className={cx("cardHead")}>
+              <Coffee style={{ width: 40, height: 40 }} />
+              <span>Mua cho Juliet một ly cà phê</span>
             </div>
-            <input className={cx('input')} placeholder="Say something nice…" />
-            <button className={cx('btn')}>Support $3</button>
+            <input
+              className={cx("input")}
+              placeholder="Nói điều gì đó dễ thương…"
+            />
+            <button className={cx("btn")}>Ủng hộ $3</button>
           </div>
-          <div className={cx('bubble','b1')}>Ana bought 10 coffees</div>
-          <div className={cx('bubble','b2')}>Cathy C bought 6 coffees<br/>Thanks Cathy!</div>
-          <div className={cx('bubble','b3')}>Alex bought 30 coffees</div>
-          <div className={cx('bubble','b4')}>Tony Steel bought 3 coffees<br/>"Absolutely the best show I already waiting for next one. I’m really looking forward what you’re doing."<br/>Thanks Tony!</div>
+          <div className={cx("bubble", "b1")}>Ana đã mua 10 ly cà phê</div>
+          <div className={cx("bubble", "b2")}>
+            Cathy C đã mua 6 ly cà phê
+            <br />
+            Cảm ơn Cathy!
+          </div>
+          <div className={cx("bubble", "b3")}>Alex đã mua 30 ly cà phê</div>
+          <div className={cx("bubble", "b4")}>
+            Tony Steel đã mua 3 ly cà phê
+            <br />
+            "Tuyệt đối là chương trình hay nhất, tôi đã chờ tập tiếp theo. Tôi
+            thật sự mong đợi những gì bạn đang làm."
+            <br />
+            Cảm ơn Tony!
+          </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

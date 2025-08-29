@@ -26,8 +26,7 @@ export default function Hero() {
         </h1>
 
         <p className={cx("sub")}>
-          Accept support. Start a membership. Setup a shop. It’s easier than you
-          think.
+          Nhận ủng hộ. Bắt đầu hội viên. Mở cửa hàng. Dễ hơn bạn nghĩ.
         </p>
 
         <div className={cx("ctaWrap")}>
@@ -44,32 +43,32 @@ export default function Hero() {
         <div className={cx("field")}>
           <Badge
             className={cx("b1")}
-            title="Cara is building a new platform for artists"
+            title="Cara đang xây dựng nền tảng mới cho các nghệ sĩ"
             supporters="8,780"
           />
           <Badge
             className={cx("b2")}
-            title="Kaleigh Cohen is creating indoor cycling and strength workouts on YouTube!"
+            title="Kaleigh Cohen đang tạo bài tập đạp xe trong nhà và luyện sức mạnh trên YouTube!"
             supporters="4,488"
           />
           <Badge
             className={cx("b3")}
-            title="Teacher Stefano is creating YouTube videos and Podcast"
+            title="Thầy Stefano đang tạo video và podcast trên YouTube"
             supporters="641"
           />
           <Badge
             className={cx("b4")}
-            title="The Thrill Of The Thrift is creating thrifting videos"
+            title="The Thrill Of The Thrift đang tạo video săn đồ cũ"
             supporters="112"
           />
           <Badge
             className={cx("b5")}
-            title="Beach Talk Radio is a Dinky Little Podcast"
+            title="Beach Talk Radio là một podcast nhỏ xíu"
             supporters="1,805"
           />
           <Badge
             className={cx("b6")}
-            title="Simple Politics is helping people have better conversations about politics"
+            title="Simple Politics đang giúp mọi người có những cuộc trò chuyện tốt hơn về chính trị"
             supporters="—"
           />
         </div>
