@@ -22,7 +22,7 @@ export default function Hero() {
         <h1 className={cx("h1")}>
           Xây thương hiệu,
           <br />
-          phát tiển kinh doanh <br /> của bạn
+          phát triển kinh doanh <br /> của bạn
         </h1>
 
         <p className={cx("sub")}>
@@ -32,11 +32,11 @@ export default function Hero() {
 
         <div className={cx("ctaWrap")}>
           <a href="#" className={cx("cta")}>
-            Start my page
+            Bắt đầu trang của tôi
           </a>
         </div>
 
-        <p className={cx("ctaNote")}>It’s free and takes less than a minute!</p>
+        <p className={cx("ctaNote")}>Miễn phí & chưa đầy 1 phút!</p>
       </div>
 
       {/* Floating badges */}
