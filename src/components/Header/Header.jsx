@@ -28,7 +28,7 @@ export default function Header() {
             <Coffee
               style={{ width: 24, height: 24, color: "var(--brand-yellow)" }}
             />
-            <div className={cx("brandTitle")}>Buy me a coffee</div>
+            <div className={cx("brandTitle")}>Bao La</div>
             <sup>®</sup>
           </div>
 
@@ -37,13 +37,13 @@ export default function Header() {
               <Search
                 style={{ width: 16, height: 16, color: "rgba(0,0,0,.6)" }}
               />
-              <input placeholder="Search creators" />
+              <input placeholder="Tìm danh bạ thương hiệu" />
             </div>
             <a href="#" className={cx("login")}>
-              Log in
+              Đăng nhập
             </a>
             <a href="#" className={cx("signup")}>
-              Sign up
+              Đăng ký
             </a>
           </div>
         </div>

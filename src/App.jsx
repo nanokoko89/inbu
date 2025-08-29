@@ -1,19 +1,8 @@
-import React from 'react';
-import Header from './components/Header/Header';
-import Hero from './sections/Hero/Hero';
-import Support from './sections/Support/Support';
-import Shop from './sections/Shop/Shop';
-import Benefits from './sections/Benefits/Benefits';
-import './styles/globals.scss';
+import React from "react";
+
+import "./styles/globals.scss";
+import Home from "./pages/Home";
 
 export default function App() {
-  return (
-    <div>
-      <Header />
-      <Hero />
-      <Support />
-      <Shop />
-      <Benefits />
-    </div>
-  )
+  return Home;
 }
