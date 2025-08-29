@@ -15,14 +15,14 @@ export default function Hero() {
             <Star key={i} style={{ width: 24, height: 24 }} />
           ))}
           <span className={cx("starsText")}>
-            Được yêu thích bởi 10,000+ cá nhân/doanh nghiệp
+            Được yêu thích bởi 10,000+ thương hiệu và 50,000+ người dùng
           </span>
         </div>
 
         <h1 className={cx("h1")}>
-          Xây thương hiệu,
+          Tìm kiếm danh bạ
           <br />
-          phát triển kinh doanh <br /> của bạn
+          nơi bạn có thể tin tưởng
         </h1>
 
         <p className={cx("sub")}>
@@ -43,32 +43,32 @@ export default function Hero() {
         <div className={cx("field")}>
           <Badge
             className={cx("b1")}
-            title="Cara đang xây dựng nền tảng mới cho các nghệ sĩ"
+            title="Cho Thuê Xe Ôtô Tự Lái Hùng Đạt"
             supporters="8,780"
           />
           <Badge
             className={cx("b2")}
-            title="Kaleigh Cohen đang tạo bài tập đạp xe trong nhà và luyện sức mạnh trên YouTube!"
+            title="Cà Phê Đen Phố Cổ"
             supporters="4,488"
           />
           <Badge
             className={cx("b3")}
-            title="Thầy Stefano đang tạo video và podcast trên YouTube"
+            title="Sửa Chữa Laptop 24h"
             supporters="641"
           />
           <Badge
             className={cx("b4")}
-            title="The Thrill Of The Thrift đang tạo video săn đồ cũ"
+            title="Makeup Hoàng Linh"
             supporters="112"
           />
           <Badge
             className={cx("b5")}
-            title="Beach Talk Radio là một podcast nhỏ xíu"
+            title="Homestay Nature Hòa Bình"
             supporters="1,805"
           />
           <Badge
             className={cx("b6")}
-            title="Simple Politics đang giúp mọi người có những cuộc trò chuyện tốt hơn về chính trị"
+            title="Hùng Lắp Internet & Truyền Hình"
             supporters="—"
           />
         </div>

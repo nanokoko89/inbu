@@ -90,11 +90,11 @@ export default function Explore() {
     <div>
       <Header />
       <div className={`container ${styles.directory}`}>
-        <h1>Khám phá</h1>
+        {/* <h1>Khám phá</h1>
         <p>
           Danh bạ kinh doanh của các thương hiệu cá nhân, tổ chức, địa điểm,
           dịch vụ bạn cần.
-        </p>
+        </p> */}
 
         <div className={styles.categories}>
           {categories.map((cat) => (

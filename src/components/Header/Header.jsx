@@ -11,40 +11,35 @@ export default function Header() {
     <header className={cx("header")}>
       <div className="container">
         <div className={cx("wrap")}>
-          <nav className={cx("left")}>
-            <Link to="/" className={cx("link")}>
-              Trang chủ
-            </Link>
-            <Link to="/explore" className={cx("link")}>
-              Khám phá
-              {/* <Heart style={{ width: 16, height: 16 }} /> */}
-            </Link>
-            <a href="#" className={cx("link")}>
-              Thêm&nbsp;
-              <ChevronDown style={{ width: 16, height: 16 }} />
-            </a>
-          </nav>
-
           <div className={cx("brand")}>
             <Coffee
               style={{ width: 24, height: 24, color: "var(--brand-yellow)" }}
             />
             <div className={cx("brandTitle")}>Bao La</div>
-            <sup>®</sup>
+            <sup>Tìm thương hiệu uy tín</sup>
           </div>
-
+          {/* <nav className={cx("left")}>
+            <Link to="/" className={cx("link")}>
+              Trang chủ
+            </Link>
+            <Link to="/explore" className={cx("link")}>
+              Danh bạ
+            </Link>
+            <Link to="/" className={cx("link")}>
+              Yêu thích
+            </Link>
+          </nav> */}
+          <div className={cx("search")}>
+            <Search
+              style={{ width: 24, height: 24, color: "rgba(0,0,0,.6)" }}
+            />
+            <input placeholder="Tìm chuyên gia, dịch vụ hoặc địa điểm" />
+          </div>
           <div className={cx("controls")}>
-            <div className={cx("search")}>
-              <Search
-                style={{ width: 16, height: 16, color: "rgba(0,0,0,.6)" }}
-              />
-              <input placeholder="Tìm danh bạ thương hiệu" />
-            </div>
-
             <Link to="/login" className={cx("login")}>
               Đăng nhập
             </Link>
-            <Link to="/signup" className={cx("signup")}>
+            <Link to="/dashboard" className={cx("signup")}>
               Đăng ký
             </Link>
           </div>
