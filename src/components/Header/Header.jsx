@@ -2,6 +2,7 @@ import React from "react";
 import classNames from "classnames/bind";
 import styles from "./Header.module.scss";
 import { Heart, Search, ChevronDown, Coffee } from "../Icons";
+import { Link } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
@@ -11,13 +12,13 @@ export default function Header() {
       <div className="container">
         <div className={cx("wrap")}>
           <nav className={cx("left")}>
-            <a href="/" className={cx("link")}>
+            <Link to="/" className={cx("link")}>
               Home
-            </a>
-            <a href="/explore" className={cx("link")}>
+            </Link>
+            <Link to="/explore" className={cx("link")}>
               Khám phá
               {/* <Heart style={{ width: 16, height: 16 }} /> */}
-            </a>
+            </Link>
             <a href="#" className={cx("link")}>
               Thêm&nbsp;
               <ChevronDown style={{ width: 16, height: 16 }} />
