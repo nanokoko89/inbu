@@ -40,12 +40,13 @@ export default function Header() {
               />
               <input placeholder="Tìm danh bạ thương hiệu" />
             </div>
-            <a href="#" className={cx("login")}>
+
+            <Link to="/login" className={cx("login")}>
               Đăng nhập
-            </a>
-            <a href="#" className={cx("signup")}>
+            </Link>
+            <Link to="/signup" className={cx("signup")}>
               Đăng ký
-            </a>
+            </Link>
           </div>
         </div>
       </div>

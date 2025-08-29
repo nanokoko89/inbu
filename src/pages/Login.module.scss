@@ -1,0 +1,150 @@
+// File: src/pages/Login.module.scss
+:root {
+  --yellow: #ffd400;
+  --text: #111111;
+  --muted: #6f6f6f;
+  --line: #eaeaea;
+  --field: #f8f8f8;
+  --error: #e03131;
+}
+
+.page {
+  min-height: 100vh;
+  background: #fff;
+  color: var(--text);
+  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.topbar {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.authLink {
+  color: #444;
+  font-size: 14px;
+}
+.signup {
+  margin-left: 8px;
+  color: #111;
+  font-weight: 600;
+  text-decoration: none;
+}
+.signup:hover {
+  text-decoration: underline;
+}
+
+.main {
+  max-width: 480px;
+  margin: 60px auto 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 8px 0 24px;
+}
+
+.form {
+  width: 420px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 0 0 6px;
+}
+
+.input {
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  padding: 0 14px;
+  background: #fff;
+  outline: none;
+  font-size: 16px;
+}
+.input:focus {
+  border-color: #111;
+}
+.input.error {
+  border-color: var(--error);
+}
+
+.error {
+  color: var(--error);
+  font-size: 13px;
+  margin: 8px 0 6px 2px;
+}
+
+.primary {
+  margin-top: 16px;
+  height: 48px;
+  border-radius: 999px;
+  border: none;
+  background: var(--yellow);
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+.primary:hover {
+  filter: brightness(0.97);
+}
+
+.divider {
+  width: 420px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 14px;
+  margin: 16px 0;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+.socials {
+  width: 420px;
+  max-width: 100%;
+  display: grid;
+  gap: 12px;
+}
+
+.socialBtn {
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 600;
+}
+.socialBtn:hover {
+  background: #fafafa;
+}
