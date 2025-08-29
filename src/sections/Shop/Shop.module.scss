@@ -1,0 +1,19 @@
+.wrap { padding:96px 0; }
+.inner { display:flex; flex-direction:column; align-items:center; gap:48px; }
+@media (min-width: 768px){ .inner { flex-direction:row; justify-content:space-between; gap:64px; } }
+.text { max-width:480px; }
+.eyebrow { font-weight:700; font-size:14px; color:var(--text-dim); letter-spacing:0.08em; }
+.title { margin-top:12px; font-weight:800; font-size:56px; line-height:1; letter-spacing:-0.02em; }
+.desc { margin-top:16px; font-size:20px; color:var(--text-dim); }
+.graphic { width:100%; max-width:520px; }
+.product { position:relative; background:#fff; border:1px solid var(--border); box-shadow:var(--shadow); border-radius:16px; padding:24px; }
+.badge { position:absolute; top:16px; left:16px; background:var(--brand-yellow); padding:4px 8px; border-radius:6px; font-weight:700; font-size:12px; }
+.thumb { height:160px; background:#f3f4f6; border-radius:8px; margin-bottom:16px; }
+.info { }
+.name { margin:0; font-size:20px; font-weight:700; }
+.price { margin:4px 0 12px; font-weight:700; }
+.rating { display:flex; align-items:center; gap:4px; font-size:14px; color:var(--text-dim); }
+.rating span { margin-left:8px; }
+.buy { margin-top:12px; height:40px; border:none; background:var(--brand-yellow); border-radius:8px; font-weight:700; }
+.meta { margin-top:16px; display:flex; justify-content:space-between; font-size:14px; color:var(--text-dim); }
+.earnings { text-align:right; }

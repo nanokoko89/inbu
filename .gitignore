@@ -1,0 +1,16 @@
+# Bỏ cả thư mục node_modules
+node_modules/
+
+# Bỏ tất cả file .log
+*.log
+
+# Bỏ file cụ thể
+.env
+secret-config.json
+
+# Bỏ cả thư mục build
+dist/
+build/
+
+# Bỏ tất cả file tạm của macOS
+.DS_Store

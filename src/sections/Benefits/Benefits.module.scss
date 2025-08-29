@@ -1,0 +1,6 @@
+.wrap { padding:96px 0; background:#f3f4f6; }
+.title { text-align:center; font-size:48px; font-weight:800; letter-spacing:-0.02em; margin:0 0 48px; }
+.grid { display:grid; gap:32px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); }
+.item h3 { margin:16px 0 8px; font-size:20px; }
+.item p { margin:0; font-size:16px; color:var(--text-dim); }
+.icon { color:var(--brand-green); }
