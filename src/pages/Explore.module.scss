@@ -2,6 +2,30 @@
   padding: 2rem 0;
 }
 
+.categories {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.category {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
 .list {
   display: flex;
   flex-direction: column;

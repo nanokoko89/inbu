@@ -2,6 +2,15 @@ import React from "react";
 import Header from "../components/Header/Header";
 import styles from "./Explore.module.scss";
 
+const categories = [
+  "Thời trang",
+  "Quán cà phê",
+  "Sửa chữa laptop",
+  "Makeup",
+  "Bể bơi",
+  "Huấn luyện viên thể hình",
+];
+
 const directory = [
   {
     name: "Lan Anh Makeup",
@@ -60,6 +69,14 @@ export default function Explore() {
       <div className={`container ${styles.directory}`}>
         <h1>Brand Directory</h1>
         <p>Discover individuals and businesses on our platform.</p>
+
+        <div className={styles.categories}>
+          {categories.map((cat) => (
+            <button key={cat} className={styles.category}>
+              {cat}
+            </button>
+          ))}
+        </div>
         <div className={styles.list}>
           {directory.map((item) => (
             <div key={item.name} className={styles.card}>
