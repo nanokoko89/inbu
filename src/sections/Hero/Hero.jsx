@@ -9,9 +9,9 @@ const cx = classNames.bind(styles);
 export default function Hero() {
   return (
     <section className={cx('wrap')}>
-      <div className="container" style={{paddingTop: '64px', paddingBottom:'96px'}}>
+      <div className={cx('content', 'container')}>
         <div className={cx('stars')}>
-          {[...Array(5)].map((_,i) => <Star key={i} style={{width:20, height:20}} />)}
+          {[...Array(5)].map((_,i) => <Star key={i} style={{width:24, height:24}} />)}
           <span className={cx('starsText')}>Loved by 1,000,000+ creators</span>
         </div>
 
