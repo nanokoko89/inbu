@@ -11,13 +11,15 @@ export default function Header() {
     <header className={cx("header")}>
       <div className="container">
         <div className={cx("wrap")}>
-          <div className={cx("brand")}>
-            <Coffee
-              style={{ width: 24, height: 24, color: "var(--brand-yellow)" }}
-            />
-            <div className={cx("brandTitle")}>Bao La</div>
-            <sup>Tìm thương hiệu uy tín</sup>
-          </div>
+          <Link to="/" className={cx("link")}>
+            <div className={cx("brand")}>
+              <Coffee
+                style={{ width: 24, height: 24, color: "var(--brand-yellow)" }}
+              />
+              <div className={cx("brandTitle")}>Bao La</div>
+              <sup>Tìm thương hiệu uy tín</sup>
+            </div>
+          </Link>
           {/* <nav className={cx("left")}>
             <Link to="/" className={cx("link")}>
               Trang chủ
